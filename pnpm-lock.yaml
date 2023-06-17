@@ -143,7 +143,7 @@ importers:
       '@types/rimraf': 3.0.2
       checkpoint-client: 1.1.24
       debug: 4.3.4
-      dotenv: 16.0.3
+      dotenv: 16.3.1
       esbuild: 0.15.13
       execa: 5.1.1
       fast-deep-equal: 3.1.3
@@ -187,7 +187,7 @@ importers:
       '@types/rimraf': 3.0.2
       checkpoint-client: 1.1.24
       debug: 4.3.4
-      dotenv: 16.0.3
+      dotenv: 16.3.1
       esbuild: 0.15.13
       execa: 5.1.1
       fast-deep-equal: 3.1.3
@@ -673,7 +673,7 @@ importers:
       arg: 5.0.2
       checkpoint-client: 1.1.24
       cli-truncate: 2.1.0
-      dotenv: 16.0.3
+      dotenv: 16.3.1
       esbuild: 0.15.13
       escape-string-regexp: 4.0.0
       execa: 5.1.1
@@ -724,7 +724,7 @@ importers:
       arg: 5.0.2
       checkpoint-client: 1.1.24
       cli-truncate: 2.1.0
-      dotenv: 16.0.3
+      dotenv: 16.3.1
       escape-string-regexp: 4.0.0
       execa: 5.1.1
       find-up: 5.0.0
@@ -6541,8 +6541,8 @@ packages:
       is-obj: 2.0.0
     dev: true
 
-  /dotenv/16.0.3:
-    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+  /dotenv/16.3.1:
+    resolution: {integrity: sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==}
     engines: {node: '>=12'}
 
   /downgrade-root/1.2.2:
