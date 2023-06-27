@@ -269,7 +269,7 @@ importers:
       kleur: 4.1.5
       klona: 2.0.6
       mariadb: 3.2.0
-      memfs: 3.5.3
+      memfs: 4.2.0
       mssql: 9.1.1
       new-github-issue-url: 0.2.1
       node-fetch: 2.6.11
@@ -351,7 +351,7 @@ importers:
       kleur: 4.1.5
       klona: 2.0.6
       mariadb: 3.2.0
-      memfs: 3.5.3
+      memfs: 4.2.0
       mssql: 9.1.1
       new-github-issue-url: 0.2.1
       node-fetch: 2.6.11_oawau75ow7jz373yzwkw5fs4ry
@@ -7737,10 +7737,6 @@ packages:
       minipass: 5.0.0
     dev: true
 
-  /fs-monkey/1.0.4:
-    resolution: {integrity: sha512-INM/fWAxMICjttnD0DX1rBvinKskj5G1w+oy/pnm9u/tSlnBrzFonJMcalKJ30P8RRsPzKcCG7Q8l0jx5Fh9YQ==}
-    dev: true
-
   /fs.realpath/1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
 
@@ -8348,6 +8344,11 @@ packages:
     resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
     engines: {node: '>=14'}
     hasBin: true
+    dev: true
+
+  /hyperdyperid/1.2.0:
+    resolution: {integrity: sha512-Y93lCzHYgGWdrJ66yIktxiaGULYc6oGiABxhcO5AufBeOyoIdZF7bIfLaOrbM0iGIOXQQgxxRrFEnb+Y6w1n4A==}
+    engines: {node: '>=10.18'}
     dev: true
 
   /iconv-lite/0.4.24:
@@ -9700,6 +9701,19 @@ packages:
     resolution: {integrity: sha512-4bV5BfR2mqfQTJm+V5tPPdf+ZpuhiIvTuAB5g8kcrXOZpTT/QwwVRWBywX1ozr6lEuPdbHxwaJlm9G6mI2sfSQ==}
     dev: true
 
+  /json-joy/9.3.0:
+    resolution: {integrity: sha512-ZQiyMcbcfqki5Bsk0kWfne/Ixl4Q6cLBzCd3VE/TSp7jhns/WDBrIMTuyzDfwmLxuFtQdojiLSLX8MxTyK23QA==}
+    engines: {node: '>=10.0'}
+    hasBin: true
+    peerDependencies:
+      quill-delta: ^5
+      rxjs: '7'
+      tslib: '2'
+    dependencies:
+      arg: 5.0.2
+      hyperdyperid: 1.2.0
+    dev: true
+
   /json-parse-better-errors/1.0.2:
     resolution: {integrity: sha512-mrqyZKfX5EhL7hvqcV6WG1yYjnjeuYDzDhhcAAUrq8Po85NBQBJP+ZDUT75qZQ98IkUoBqdkExkukOU7Ts2wrw==}
     dev: true
@@ -10341,11 +10355,17 @@ packages:
       p-is-promise: 2.1.0
     dev: true
 
-  /memfs/3.5.3:
-    resolution: {integrity: sha512-UERzLsxzllchadvbPs5aolHh65ISpKpM+ccLbOJ8/vvpBKmAWf+la7dXFy7Mr0ySHbdHrFv5kGFCUHHe6GFEmw==}
+  /memfs/4.2.0:
+    resolution: {integrity: sha512-V5/xE+zl6+soWxlBjiVTQSkfXybTwhEBj2I8sK9LaS5lcZsTuhRftakrcRpDY7Ycac2NTK/VzEtpKMp+gpymrQ==}
     engines: {node: '>= 4.0.0'}
+    peerDependencies:
+      tslib: '2'
     dependencies:
-      fs-monkey: 1.0.4
+      json-joy: 9.3.0
+      thingies: 1.11.1
+    transitivePeerDependencies:
+      - quill-delta
+      - rxjs
     dev: true
 
   /memory-pager/1.5.0:
@@ -13291,6 +13311,13 @@ packages:
   /textextensions/5.15.0:
     resolution: {integrity: sha512-MeqZRHLuaGamUXGuVn2ivtU3LA3mLCCIO5kUGoohTCoGmCBg/+8yPhWVX9WSl9telvVd8erftjFk9Fwb2dD6rw==}
     engines: {node: '>=0.8'}
+    dev: true
+
+  /thingies/1.11.1:
+    resolution: {integrity: sha512-SXWTuQA6TFjpfV4xiwPs4FkHashZShR/Hugosrm9sRMm63fAdgZaWKixt5YvuP6VwDaAROcDwf9cFeuw1DeekA==}
+    engines: {node: '>=10.18'}
+    peerDependencies:
+      tslib: ^2
     dev: true
 
   /through/2.3.8:
